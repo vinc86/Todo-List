@@ -1,0 +1,23 @@
+{
+  "name": "Todo",
+  "version": "1.0.0",
+  "description": "Todo list made with Html. CSS and Vanilla JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w style/ -o style/css recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinc86/Todo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinc86/Todo-List/issues"
+  },
+  "homepage": "https://github.com/vinc86/Todo-List#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
