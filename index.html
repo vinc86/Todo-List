@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/css/main.css">
+    <script src="https://kit.fontawesome.com/bf58c31cb6.js" crossorigin="anonymous"></script>
+    <title>Vinz's Todo</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>What's on for Today?</h1>
+        </header>
+
+        <div class="todo-input-box">
+            <form action="/" method="post">
+                <input class="todo-input" type="text" placeholder="New Todo's...">
+                <button class="todo-button" type="submit"><i class="far fa-plus-square fa-2x"></i></button>
+            </form>
+            <p class="error"></p>
+        </div>
+        <div class="todo-list-container">
+            <ul class="todo-list">
+                <!-- list-item dinamically added trough JS -->
+            </ul>
+        </div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
