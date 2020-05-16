@@ -7,10 +7,14 @@ const inputContainer = document.querySelector(".todo-input-box");
 
 // EVENT LISTENERS
 todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", crossItem);
 
 // FUNCTIONS
+
+//Add new Todo
 function addTodo(e) {
     e.preventDefault();
+
     //Grab the imput Value
     const newTodo = todoInput.value;
     const errorMsg = document.querySelector(".error");
@@ -21,27 +25,38 @@ function addTodo(e) {
     } else {
         errorMsg.textContent = " ";
         errorMsg.style.transform = "scale(0)";
+
           //create list-item
           const newItem = document.createElement("li");
           newItem.classList.add("todo");
+
           //append to ul
           todoList.appendChild(newItem);
-          //print the text from the input field
+
+          //print the text from the input fieconsole.log(removeBtn);ld
           newItem.innerText = newTodo;
+
           //clear the input field
           todoInput.value = "";
 
-
-
-          const todoItem = document.querySelector(".todo");
-          todoItem.addEventListener("click", crossItem);
+          //Add remove button
+          const removeBtn = document.createElement("button");
+          removeBtn.classList.add("removeBtn");
+          removeBtn.innerText= "Delete";
+          newItem.appendChild(removeBtn);
 
     }
 
 }
 
-function crossItem(){
-   this.classList.add("cross");
+//Mark the todo as completed
+function crossItem(e){
+    e.preventDefault();
+    if(e.target.innerHTML === "Delete"){
+        return;
+    } else {
+        e.target.classList.toggle("cross");
+    }
    
 }
 
