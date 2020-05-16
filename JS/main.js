@@ -63,5 +63,6 @@ function crossOrDelete(e) {
         item.parentElement.remove();
     } else {
         item.classList.toggle("cross");
+        /*  */
     }
 }
