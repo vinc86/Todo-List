@@ -53,7 +53,6 @@ function addTodo(e) {
 function crossOrDelete(e) {
     e.preventDefault();
     const item = e.target;
-    console.log(item.classList);
     /* Alternative 
         if(item.classList[0]==="removeBtn"){
             item.parentElement.remove();
@@ -63,6 +62,5 @@ function crossOrDelete(e) {
         item.parentElement.remove();
     } else {
         item.classList.toggle("cross");
-        /*  */
     }
 }
