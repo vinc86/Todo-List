@@ -7,7 +7,7 @@ const inputContainer = document.querySelector(".todo-input-box");
 
 // EVENT LISTENERS
 todoButton.addEventListener("click", addTodo);
-todoList.addEventListener("click", crossItem);
+todoList.addEventListener("click", crossOrDelete);
 
 // FUNCTIONS
 
@@ -26,37 +26,42 @@ function addTodo(e) {
         errorMsg.textContent = " ";
         errorMsg.style.transform = "scale(0)";
 
-          //create list-item
-          const newItem = document.createElement("li");
-          newItem.classList.add("todo");
+        //create list-item
+        const newItem = document.createElement("li");
+        newItem.classList.add("todo");
 
-          //append to ul
-          todoList.appendChild(newItem);
+        //append to ul
+        todoList.appendChild(newItem);
 
-          //print the text from the input fieconsole.log(removeBtn);ld
-          newItem.innerText = newTodo;
+        //print the text from the input fieconsole.log(removeBtn);ld
+        newItem.innerText = newTodo;
 
-          //clear the input field
-          todoInput.value = "";
+        //clear the input field
+        todoInput.value = "";
 
-          //Add remove button
-          const removeBtn = document.createElement("button");
-          removeBtn.classList.add("removeBtn");
-          removeBtn.innerText= "Delete";
-          newItem.appendChild(removeBtn);
+        //Add remove button
+        const removeBtn = document.createElement("button");
+        removeBtn.classList.add("removeBtn");
+        removeBtn.innerText = "Delete";
+        newItem.appendChild(removeBtn);
 
     }
 
 }
 
-//Mark the todo as completed
-function crossItem(e){
+//Mark the todo as completed or delete it
+function crossOrDelete(e) {
     e.preventDefault();
-    if(e.target.innerHTML === "Delete"){
-        return;
+    const item = e.target;
+    console.log(item.classList);
+    /* Alternative 
+        if(item.classList[0]==="removeBtn"){
+            item.parentElement.remove();
+        }
+    */
+    if (item.innerHTML === "Delete") {
+        item.parentElement.remove();
     } else {
-        e.target.classList.toggle("cross");
+        item.classList.toggle("cross");
     }
-   
 }
-
