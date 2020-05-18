@@ -126,6 +126,9 @@ body .wrapper .todo-list-container .todo-list .todo .removeBtn {
   right: 0%;
   text-transform: uppercase; }
 
+body .wrapper .todo-list-container .todo-list .slide {
+  transform: translateX(300px) scale(0); }
+
 body .wrapper .todo-list-container .todo-list .cross {
   text-decoration: line-through;
   color: #777; }

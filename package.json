@@ -4,7 +4,7 @@
   "description": "Todo list made with Html. CSS and Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w style/ -o style/css recursive"
+    "sass": "node-sass -w style/ -o style/css --recursive"
   },
   "repository": {
     "type": "git",

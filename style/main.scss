@@ -41,111 +41,130 @@ body {
         margin: auto;
         display: flex;
         flex-direction: column;
-        header{
+
+        header {
             padding: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            h1{
+
+            h1 {
                 font-size: 2rem;
                 color: #fff;
                 text-align: center;
                 text-shadow: 1px 1px #222;
             }
         }
-       
-       .todo-input-box{
-           width: 100%;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           form{
-               display: flex;
-               .todo-input{
-                   width: 300px;
-                   height: 40px;
-                   padding: 10px;
-                   outline: none;
-                   border: none;
-                   background: #fff;
-                   transition: all 0.4s ease;
-               }
-               .todo-input:focus{
-                border-left:5px solid rgb(0, 119, 255);
-               }
-               .todo-button{
-                   border: none;
-                   height: 40px;
-                   width: 40px;
-                   background: #fff;
-                   color: rgb(36, 212, 20);
-                   transition: all 0.4s ease;
-                   cursor: pointer;
-                   i{
-                       pointer-events: none;
-                   }
-               }
-               .todo-button:hover{
-                   background: rgb(36, 212, 20);
-                   color: #fff;
-               }
-           }
-           .error{
-               height: 50px;
-               transform: scale(0);
-               transition: all 0.4s ease;
-               margin: 10px;
-               color: green;
-               font-weight: 600;
-               background: rgb(160, 247, 196);
-               padding:10px 20px;
-           }
-       }
-       .todo-list-container{
-           width: 100%;
-           height: 200px;
-           display: flex;
-           justify-content: center;
-           .todo-list{
-               width: 370px;
-               .todo{
-                   position: relative;
-                   background: #fff;
-                   margin-top: 10px;
-                   width: 100%;
-                   height: 40px;
-                   display: flex;
-                   align-items: center;
-                   padding: 10px;
-                   transition: 0.4s ease;
-                   color: rgb(0, 112, 34);
-                   cursor: pointer; 
-                   .removeBtn{
-                    height: 100%;
+
+        .todo-input-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            form {
+                display: flex;
+
+                .todo-input {
+                    width: 300px;
+                    height: 40px;
                     padding: 10px;
-                    background: orange;
-                    opacity: 1;
-                    color: #fff;
-                    font-weight: bold;
-                    position: absolute;
-                    right: 0%;
-                    text-transform: uppercase;
+                    outline: none;
+                    border: none;
+                    background: #fff;
+                    transition: all 0.4s ease;
                 }
-                   
-               }
-               
-               .cross{
-                   text-decoration: line-through;
-                   color: #777;
-               }
-               .todo:hover{
-                   background: rgb(200, 252, 221);
-               }
-               
-           }
-           
-       }     
-        
+
+                .todo-input:focus {
+                    border-left: 5px solid rgb(0, 119, 255);
+                }
+
+                .todo-button {
+                    border: none;
+                    height: 40px;
+                    width: 40px;
+                    background: #fff;
+                    color: rgb(36, 212, 20);
+                    transition: all 0.4s ease;
+                    cursor: pointer;
+
+                    i {
+                        pointer-events: none;
+                    }
+                }
+
+                .todo-button:hover {
+                    background: rgb(36, 212, 20);
+                    color: #fff;
+                }
+            }
+
+            .error {
+                height: 50px;
+                transform: scale(0);
+                transition: all 0.4s ease;
+                margin: 10px;
+                color: green;
+                font-weight: 600;
+                background: rgb(160, 247, 196);
+                padding: 10px 20px;
+            }
+        }
+
+        .todo-list-container {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+
+            .todo-list {
+                width: 370px;
+
+                .todo {
+                    position: relative;
+                    background: #fff;
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    transition: 0.4s ease;
+                    color: rgb(0, 112, 34);
+                    cursor: pointer;
+
+                    .removeBtn {
+                        height: 100%;
+                        padding: 10px;
+                        background: orange;
+                        opacity: 1;
+                        color: #fff;
+                        font-weight: bold;
+                        position: absolute;
+                        right: 0%;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+                .slide {
+                    transform:
+                        translateX(300px) scale(0);
+                }
+
+                .cross {
+                    text-decoration: line-through;
+                    color: #777;
+                }
+
+                .todo:hover {
+                    background: rgb(200, 252, 221);
+                }
+
+            }
+
+        }
+
     }
 }
