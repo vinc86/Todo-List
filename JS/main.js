@@ -5,11 +5,11 @@ const todoList = document.querySelector(".todo-list");
 const inputContainer = document.querySelector(".todo-input-box");
 const select = document.querySelector(".select-todo");
 const infoBtn = document.querySelector(".fa-info-circle");
-
+const children = todoList.querySelectorAll("li");
 // EVENT LISTENERS
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", crossOrDelete);
-/* select.addEventListener("click", selectTodo); */
+select.addEventListener("click", selectTodo);
 
 // FUNCTIONS
 
@@ -64,21 +64,37 @@ function crossOrDelete(e) {
   }
 }
 
-/* function selectTodo(e) {
-  let target = e.target;
-  let todo = todoList.childNodes;
+function selectTodo(e) {
+  // select the value of the option
+  let selection = e.target.value;
 
-  //display all todo's
-
-  if (target.value === "completed") {
-    if ((todo.classList[1] = "cross")) {
-      console.log(todo);
-      todo.style.display = "flex";
-    } else {
-      todo.style.display = "none";
+  // display all the tasks in the list-item
+  if (selection === "all") {
+    for (let i = 0; i < children.length; i++) {
+      children[i].style.display = "block";
+    }
+  } // display only the completed tasks
+  else if (selection === "completed") {
+    for (let i = 0; i < children.length; i++) {
+      let childrenClass = children[i].classList;
+      console.log(childrenClass);
+      if (childrenClass.contains("cross")) {
+        children[i].style.display = "block";
+      } else {
+        children[i].style.display = "none";
+      }
+    }
+  } else {
+    // display only the not completed tasks
+    for (let i = 0; i < children.length; i++) {
+      let childrenClass = children[i].classList;
+      if (!childrenClass.contains("cross")) {
+        children[i].style.display = "block";
+      } else {
+        children[i].style.display = "none";
+      }
     }
   }
-
-  console.log(e.target.value);
 }
- */
+
+/*   */
