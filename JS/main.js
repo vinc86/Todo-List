@@ -63,7 +63,7 @@ function crossOrDelete(e) {
   }
 }
 
-function selectTodo(e) {
+/* function selectTodo(e) {
   let target = e.target;
   let todo = todoList.childNodes;
 
@@ -80,3 +80,4 @@ function selectTodo(e) {
 
   console.log(e.target.value);
 }
+ */

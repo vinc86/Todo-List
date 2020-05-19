@@ -101,35 +101,7 @@ body {
                 }
             }
 
-            select {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                border: none;
-                height: 35px;
-                width: 150px;
-                background: #fff;
 
-            }
-
-            .select {
-                position: relative;
-                margin: 10px;
-            }
-
-            .select:after {
-                content: "\f107";
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                position: absolute;
-                padding: 0px 5px;
-                right: 0px;
-                top: 0px;
-                font-size: 2rem;
-                background: #009432;
-                color: #fff;
-                pointer-events: none;
-            }
 
             .error {
                 height: 50px;
@@ -219,4 +191,34 @@ body {
         }
 
     }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: 35px;
+    width: 150px;
+    background: #fff;
+
+}
+
+.select {
+    position: relative;
+    margin: 10px;
+}
+
+.select:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    padding: 0px 5px;
+    right: 0px;
+    top: 0px;
+    font-size: 2rem;
+    background: #009432;
+    color: #fff;
+    pointer-events: none;
 }
