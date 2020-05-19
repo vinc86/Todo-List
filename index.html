@@ -24,12 +24,17 @@
             <i class="far fa-plus-square fa-2x"></i>
           </button>
         </form>
+        <div class="select">
+          <select class="select-todo" name="todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="notCompleted">Not Completed</option>
+          </select>
+        </div>
         <p class="error"></p>
       </div>
       <div class="todo-list-container">
-        <ul class="todo-list">
-          <!-- list-item dinamically added trough JS -->
-        </ul>
+        <ul class="todo-list"></ul>
       </div>
     </div>
     <script src="./JS/main.js"></script>
