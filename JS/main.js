@@ -4,11 +4,12 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const inputContainer = document.querySelector(".todo-input-box");
 const select = document.querySelector(".select-todo");
+const infoBtn = document.querySelector(".fa-info-circle");
 
 // EVENT LISTENERS
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", crossOrDelete);
-select.addEventListener("click", selectTodo);
+/* select.addEventListener("click", selectTodo); */
 
 // FUNCTIONS
 

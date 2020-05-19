@@ -35,7 +35,9 @@ body {
       padding: 30px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative;
+      left: 20px; }
       body .wrapper header h1 {
         font-size: 2rem;
         color: #fff;
@@ -162,3 +164,41 @@ select {
   background: #009432;
   color: #fff;
   pointer-events: none; }
+
+.info {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .info i {
+    font-size: 1.3rem;
+    color: #940000;
+    cursor: pointer; }
+  .info i:active ~ .app-infos,
+  .info i:hover ~ .app-infos,
+  .info i:focus ~ .app-infos {
+    transform: translateY(0px) translateX(50%);
+    opacity: 1; }
+
+.app-infos {
+  position: fixed;
+  transform: translateY(-100vh) translateX(50%);
+  opacity: 0;
+  right: 50%;
+  top: 20%;
+  background: #666;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 200px;
+  height: fit-content;
+  transition: all 1s ease; }
+  .app-infos span {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer; }
