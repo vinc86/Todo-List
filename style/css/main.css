@@ -24,140 +24,120 @@ body {
   background-image: linear-gradient(40deg, #FFC312, #EE5A24);
   background-repeat: no-repeat;
   min-height: 100vh; }
-
-body .wrapper {
-  width: 80%;
-  max-width: 500px;
-  align-items: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column; }
-
-body .wrapper header {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 20px; }
-
-body .wrapper header h1 {
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-  text-shadow: 1px 1px #222; }
-
-body .wrapper .todo-input-box {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-body .wrapper .todo-input-box form {
-  width: 100%;
-  display: flex; }
-
-body .wrapper .todo-input-box form .todo-input {
-  width: 100%;
-  height: 40px;
-  padding: 10px;
-  outline: none;
-  border: none;
-  background: #fff;
-  transition: all 0.4s ease; }
-
-body .wrapper .todo-input-box form .todo-input:focus {
-  border-left: 5px solid #0077ff; }
-
-body .wrapper .todo-input-box form .todo-button {
-  border: none;
-  height: 40px;
-  width: 40px;
-  background: #fff;
-  color: #009432;
-  transition: all 0.4s ease;
-  cursor: pointer; }
-
-body .wrapper .todo-input-box form .todo-button i {
-  pointer-events: none; }
-
-body .wrapper .todo-input-box form .todo-button:hover {
-  background: #009432;
-  color: #fff; }
-
-body .wrapper .todo-input-box .error {
-  height: 50px;
-  transform: scale(0);
-  transition: all 0.4s ease;
-  margin: 10px;
-  color: green;
-  font-weight: 600;
-  background: #a0f7c4;
-  padding: 10px 20px; }
-
-body .wrapper .todo-list-container {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center; }
-
-body .wrapper .todo-list-container .todo-list {
-  width: 350px; }
-
-body .wrapper .todo-list-container .todo-list .todo {
-  position: relative;
-  background: #fff;
-  margin-top: 10px;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  font-size: 1.5rem;
-  align-items: center;
-  padding: 10px;
-  transition: 0.4s ease;
-  color: #007022;
-  cursor: pointer; }
-
-body .wrapper .todo-list-container .todo-list .todo .removeBtn {
-  height: 100%;
-  width: 50px;
-  padding: 10px;
-  background: #EA2027;
-  opacity: 1;
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  right: 0%;
-  text-transform: uppercase;
-  font-size: 1.5rem; }
-
-body .wrapper .todo-list-container .todo-list .todo .removeBtn i {
-  pointer-events: none;
-  outline: none; }
-
-body .wrapper .todo-list-container .todo-list .slide {
-  transform: translateX(300px) scale(0); }
-
-body .wrapper .todo-list-container .todo-list .cross {
-  position: relative;
-  text-decoration: line-through;
-  color: #777;
-  background: #ccc;
-  transition: all 0.3s ease; }
-
-body .wrapper .todo-list-container .todo-list .cross::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #0652DD;
-  position: absolute;
-  right: 100%;
-  margin-right: 10px;
-  transition: all 0.3s ease; }
-
-body .wrapper .todo-list-container .todo-list .todo:hover {
-  background: #c8fcdd; }
+  body .wrapper {
+    width: 80%;
+    max-width: 500px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    body .wrapper header {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 20px; }
+      body .wrapper header h1 {
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        text-shadow: 1px 1px #222; }
+    body .wrapper .todo-input-box {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      body .wrapper .todo-input-box form {
+        width: 100%;
+        display: flex; }
+        body .wrapper .todo-input-box form .todo-input {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          outline: none;
+          border: none;
+          background: #fff;
+          transition: all 0.4s ease; }
+        body .wrapper .todo-input-box form .todo-input:focus {
+          border-left: 5px solid #0077ff; }
+        body .wrapper .todo-input-box form .todo-button {
+          border: none;
+          height: 40px;
+          width: 40px;
+          background: #fff;
+          color: #009432;
+          transition: all 0.4s ease;
+          cursor: pointer; }
+          body .wrapper .todo-input-box form .todo-button i {
+            pointer-events: none; }
+        body .wrapper .todo-input-box form .todo-button:hover {
+          background: #009432;
+          color: #fff; }
+      body .wrapper .todo-input-box .error {
+        height: 50px;
+        transform: scale(0);
+        transition: all 0.4s ease;
+        margin: 10px;
+        color: green;
+        font-weight: 600;
+        background: #a0f7c4;
+        padding: 10px 20px; }
+    body .wrapper .todo-list-container {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center; }
+      body .wrapper .todo-list-container .todo-list {
+        width: 350px; }
+        body .wrapper .todo-list-container .todo-list .todo {
+          position: relative;
+          background: #fff;
+          margin-top: 10px;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          font-size: 1.5rem;
+          align-items: center;
+          padding: 10px;
+          transition: 0.4s ease;
+          color: #007022;
+          cursor: pointer; }
+          body .wrapper .todo-list-container .todo-list .todo .removeBtn {
+            height: 100%;
+            width: 50px;
+            padding: 10px;
+            background: #EA2027;
+            opacity: 1;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            right: 0%;
+            text-transform: uppercase;
+            font-size: 1.5rem; }
+            body .wrapper .todo-list-container .todo-list .todo .removeBtn i {
+              pointer-events: none;
+              outline: none; }
+        body .wrapper .todo-list-container .todo-list .slide {
+          transform: translateX(300px) scale(0); }
+        body .wrapper .todo-list-container .todo-list .cross {
+          position: relative;
+          text-decoration: line-through;
+          color: #777;
+          background: #ccc;
+          transition: all 0.3s ease; }
+        body .wrapper .todo-list-container .todo-list .cross::before {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #0652DD;
+          position: absolute;
+          right: 100%;
+          margin-right: 10px;
+          transition: all 0.3s ease; }
+        body .wrapper .todo-list-container .todo-list .todo:hover {
+          background: #c8fcdd; }
 
 select {
   -webkit-appearance: none;
@@ -191,17 +171,15 @@ select {
   display: flex;
   align-items: flex-end;
   justify-content: center; }
-
-.info i {
-  font-size: 1.3rem;
-  color: #940000;
-  cursor: pointer; }
-
-.info i:active ~ .app-infos,
-.info i:hover ~ .app-infos,
-.info i:focus ~ .app-infos {
-  transform: translateY(0px) translateX(50%);
-  opacity: 1; }
+  .info i {
+    font-size: 1.3rem;
+    color: #940000;
+    cursor: pointer; }
+  .info i:active ~ .app-infos,
+  .info i:hover ~ .app-infos,
+  .info i:focus ~ .app-infos {
+    transform: translateY(0px) translateX(50%);
+    opacity: 1; }
 
 .app-infos {
   position: fixed;
@@ -214,14 +192,20 @@ select {
   padding: 30px 20px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  width: 200px;
+  width: fit-content;
   height: fit-content;
-  transition: all 1s ease; }
-
-.app-infos span {
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer; }
+  transition: all 1s ease;
+  z-index: 10; }
+  .app-infos ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    .app-infos ul li {
+      list-style-type: square; }
+  .app-infos span {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer; }

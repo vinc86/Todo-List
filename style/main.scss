@@ -258,9 +258,20 @@ select {
     padding: 30px 20px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    width: 200px;
+    width: fit-content;
     height: fit-content;
     transition: all 1s ease;
+    z-index: 10;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        li {
+            list-style-type: square;
+        }
+    }
 
     span {
         position: absolute;
