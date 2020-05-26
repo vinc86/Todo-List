@@ -1,5 +1,5 @@
 # Todo-List
-Todo list made with Html. CSS and Vanilla JavaScript
+Todo list made with Html, CSS and Vanilla JavaScript
 
 
 ## To run in your localmachine
