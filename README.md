@@ -1,6 +1,7 @@
 # Todo-List
 Todo list made with Html, CSS and Vanilla JavaScript
-visit the page here https://vinc86.github.io/Todo-List/
+
+Visit the page here https://vinc86.github.io/Todo-List/
 
 ## To run in your localmachine
 
