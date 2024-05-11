@@ -46,7 +46,7 @@ function addTodo(e) {
   //Add remove button
   const removeBtn = document.createElement("button");
   removeBtn.classList.add("removeBtn");
-  removeBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+  removeBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
   newItem.appendChild(removeBtn);
 }
 
